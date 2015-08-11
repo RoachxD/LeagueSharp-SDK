@@ -5,6 +5,12 @@ Champion Assemblies:
 
 Utility Assemblies:
 ===========
+* Advanced Turn Around
+  * I guess the name says it all.
+  * But for those who don't undestand what this is, well, it makes sure you won't get caught by spells like:
+    * Cassiopeia's Petrifying Gaze (R) [Stun]
+    * Tryndamere's Mocking Shout (W) [Slow]
+
 * Item Swapper
   * It swaps Items using the Numpad
     * 4 - Item Slot 1
