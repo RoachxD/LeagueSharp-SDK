@@ -1,6 +1,6 @@
 Champion Assemblies:
 ===========
-Pantheon
+* Pantheon
   * A fully customisable Pantheon Script, ported from my Common Version.
 
 Utility Assemblies:
