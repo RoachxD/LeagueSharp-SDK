@@ -1,4 +1,9 @@
-Utility Scripts:
+Champion Assemblies:
+===========
+Pantheon
+  * A fully customisable Pantheon Script, ported from my Common Version.
+
+Utility Assemblies:
 ===========
 * Item Swapper
   * It swaps Items using the Numpad
