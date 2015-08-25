@@ -33,7 +33,7 @@ namespace Advanced_Turn_Around
             foreach (var champ in Variable.ExistingChampions)
             {
                 var Champion = Champions.Add(new Menu(champ.CharName, champ.CharName + "'s Spells to Avoid"));
-                Champion.Add(new MenuBool(champ.Key, champ.SpellName, true));
+                Champion.Add(new MenuBool(champ.Slot.ToString(), champ.SpellName, true));
             }
 
             Variable.Config.Attach();
@@ -55,12 +55,12 @@ namespace Advanced_Turn_Around
             foreach (var champ in Variable.ExistingChampions)
             {
                 var champion = Variable.Config["CAS"][champ.CharName];
-                if (champion == null || champion[champ.Key] == null || !champion[champ.Key].GetValue<MenuBool>().Value)
+                if (champion == null || champion[champ.Slot.ToString()] == null || !champion[champ.Slot.ToString()].GetValue<MenuBool>().Value)
                 {
                     continue;
                 }
 
-                if (!args.SData.Name.Contains(champ.Key) ||
+                if (champ.Slot != (sender as Obj_AI_Hero).GetSpellSlot(args.SData.Name) ||
                     (!(Variable.Player.Distance(sender.Position) <= champ.Range) && args.Target != Variable.Player))
                 {
                     continue;
